@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Sriracha';
+    src: url(../fontes/Sriracha-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+    font-family: 'PassionOne';
+    src: url(../fontes/PassionOne-Bold.ttf) format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+:root{
+    --titulo: 'PassionOne', Arial, Helvetica, sans-serif;
+    --texto: 'Sriracha', Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: lightgray;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    font-family: var(--titulo);
+    font-variant: small-caps;
+    font-size: 10vw;
+    padding-top: 50px;
+}
+
+header > p, a {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    padding-bottom: 50px;
+}
+
+a {
+    font-weight: bold;
+    padding: 0%;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    font-family: var(--texto);
+    font-size: 5vh;
+}
+
+section > p{
+    padding-bottom: 2em;
+}
+
+.normal{
+    background-color: white;
+    color: black;
+}
+
+.fundo{
+    box-shadow: inset 1px 10px 10px hsla(0, 0%, 0%, 0.500);
+}
+
+.fundo > p{
+    display: inline-block;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.466);
+    background-color: hsla(0, 0%, 0%, 0.500);
+    color: white;
+    padding: 5px;
+}
+
+section#img01{
+    background: black url('../imagens/background001.jpg') right center no-repeat fixed;
+    background-size: cover;
+}
+
+section#img02{
+    background: black url('../imagens/background002.jpg') right center no-repeat fixed;
+    background-size: cover;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
